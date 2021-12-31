@@ -9,6 +9,7 @@ const LineAndColumnChart = ({
     categories,
     lineNames,
     columnNames,
+    isStacked,
     width,
     height,
 }: LineAndColumnChartProps) => {
@@ -18,14 +19,17 @@ const LineAndColumnChart = ({
         typeof categories[0] === 'object'
             ? categories.map((el) => el.toLocaleString())
             : categories;
-    const yaxis = convertNamesToYaxis(lineNames, columnNames);
     const chartOption: ApexOptions = {
         series: series,
-        chart: { type: 'line', height: height ?? 350, width: width ?? 800 },
+        chart: {
+            type: 'line',
+            height: height ?? 350,
+            width: width ?? 800,
+            stacked: isStacked,
+        },
         xaxis: {
             categories: xaxis,
         },
-        yaxis: yaxis,
     };
     return <Chart options={chartOption} />;
 };
@@ -67,24 +71,4 @@ const convertDataToSeries = (
         series.push({ name: el, type: 'column', data: data[el] });
     });
     return series;
-};
-
-const convertNamesToYaxis = (lineNames: string[], columnNames: string[]) => {
-    const yaxis: ApexYAxis[] = [];
-    lineNames.forEach((el) => {
-        yaxis.push({
-            opposite: true,
-            title: {
-                text: el,
-            },
-        });
-    });
-    columnNames.forEach((el) => {
-        yaxis.push({
-            title: {
-                text: el,
-            },
-        });
-    });
-    return yaxis;
 };
