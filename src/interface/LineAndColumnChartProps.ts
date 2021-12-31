@@ -6,4 +6,5 @@ export default interface LineAndColumnChartProps extends ChartProps {
     columnNames: string[];
     categories: string[] | number[] | Date[];
     barBorderRadius?: number;
+    isStacked: boolean;
 }
