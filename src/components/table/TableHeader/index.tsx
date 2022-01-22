@@ -3,13 +3,15 @@ import TableHeaderProps from '@interface/table/TableHeaderProps';
 
 const TableHeader = ({ headers }: TableHeaderProps) => {
     return (
-        <th>
-            {headers.map((header, i) => (
-                <tr key={i}>
-                    <input value={header} />
-                </tr>
-            ))}
-        </th>
+        <thead>
+            <tr>
+                {headers.map((header, i) => (
+                    <th key={i}>
+                        <input value={header} />
+                    </th>
+                ))}
+            </tr>
+        </thead>
     );
 };
 
