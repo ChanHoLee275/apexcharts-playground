@@ -1,5 +1,5 @@
 import React from 'react';
-import TableHeaderProps from '../../interface/table/TableHeaderProps';
+import TableHeaderProps from '../../../interface/table/TableHeaderProps';
 
 const TableHeader = ({ headers }: TableHeaderProps) => {
     return (

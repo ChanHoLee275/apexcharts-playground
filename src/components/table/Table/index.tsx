@@ -1,6 +1,6 @@
 import React from 'react';
-import TableBody from './TableBody';
-import TableHeader from './TableHeader';
+import TableBody from '../TableBody';
+import TableHeader from '../TableHeader';
 
 const Table = () => {
     const [figures, setFigures] = React.useState<string[]>([]);
