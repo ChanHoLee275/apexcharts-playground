@@ -1,6 +1,6 @@
 import { ApexOptions } from 'apexcharts';
 import React from 'react';
-import LineAndColumnChartProps from '../interface/LineAndColumnChartProps';
+import LineAndColumnChartProps from '../../interface/LineAndColumnChartProps';
 import Chart from './Chart';
 
 const LineAndColumnChart = ({
