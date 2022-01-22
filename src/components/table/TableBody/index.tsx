@@ -1,5 +1,5 @@
 import React from 'react';
-import { TableBodyProps } from '../../../interface/table/TableBodyProps';
+import { TableBodyProps } from '@interface/table/TableBodyProps';
 
 const TableBody = ({ data }: TableBodyProps) => {
     return (

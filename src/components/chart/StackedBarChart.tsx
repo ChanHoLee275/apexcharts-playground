@@ -1,6 +1,6 @@
 import { ApexOptions } from 'apexcharts';
 import React from 'react';
-import StackedBarChartProps from '../../interface/StackedBarChartProps';
+import StackedBarChartProps from '@interface/chart/StackedBarChartProps';
 import Chart from './Chart';
 
 const StackedBarChart = ({

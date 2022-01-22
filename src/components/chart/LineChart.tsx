@@ -1,6 +1,6 @@
 import React from 'react';
 import { ApexOptions } from 'apexcharts';
-import LineChartProps from '../../interface/LineChartProps';
+import LineChartProps from '@interface/chart/LineChartProps';
 import Chart from './Chart';
 
 const convertDateToString = (el: Date) => el.toLocaleDateString();

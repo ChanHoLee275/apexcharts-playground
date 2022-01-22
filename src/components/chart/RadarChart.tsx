@@ -1,6 +1,6 @@
 import { ApexOptions } from 'apexcharts';
 import React from 'react';
-import RadarChartProps from '../../interface/RadarChartProps';
+import RadarChartProps from '@interface/chart/RadarChartProps';
 import Chart from './Chart';
 
 const RadarChart = ({

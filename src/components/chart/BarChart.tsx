@@ -1,6 +1,6 @@
 import { ApexOptions } from 'apexcharts';
 import React from 'react';
-import BarChartProps from '../../interface/BarChartProps';
+import BarChartProps from '@interface/chart/BarChartProps';
 import Chart from './Chart';
 
 const BarChart = ({
